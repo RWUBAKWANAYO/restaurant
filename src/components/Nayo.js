@@ -6,9 +6,13 @@ export default function Nayo() {
     const history = useHistory()
   
     useEffect(() => {
-      setTimeout(() => {
-        history.push('/')
-      }, 3000) 
+        function fetchBusinesses() {
+            setTimeout(() => {
+                history.push('/')
+              }, 3000) 
+          }
+          fetchBusinesses()
+     
     }, []);
   
     return (
